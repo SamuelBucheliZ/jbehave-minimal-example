@@ -6,7 +6,7 @@ pushd jbehave-minimal-example
 
 echo "Starting tests with maven"
 mvn clean integration-test
-test_status = $?
+test_status=$?
 echo "Tests done"
 
 popd
