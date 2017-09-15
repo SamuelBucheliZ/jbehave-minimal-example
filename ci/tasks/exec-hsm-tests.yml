@@ -15,4 +15,4 @@ params:
   PROJECT_NAME: {{project_name}}
 
 run:
-  path: {{project_name}}/ci/scripts/exec-hsm-tests.sh
+  path: ((project_name))/ci/scripts/exec-hsm-tests.sh

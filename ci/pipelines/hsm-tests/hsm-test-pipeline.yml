@@ -2,7 +2,7 @@ resources:
 - name: {{project_name}}
   type: git
   source:
-    uri: https://github.com/SamuelBucheliZ/{{project_name}}.git
+    uri: https://github.com/SamuelBucheliZ/((project_name)).git
 #- name: nightly
 #  type: time
 #  source:
@@ -18,5 +18,5 @@ jobs:
 #  - get: nightly
 #    trigger: true
   - task: exec-hsm-tests
-    file: {{project_name}}/ci/tasks/exec-hsm-tests.yml
+    file: ((project_name))/ci/tasks/exec-hsm-tests.yml
 
