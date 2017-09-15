@@ -1,8 +1,5 @@
 #!/bin/bash
-#
-# All UPERCASE variables are provided externally from this script
 
-# TODO: Do we want set -ex, i.e., abort on first error?
 set -x
 
 cd jbehave-minimal-example

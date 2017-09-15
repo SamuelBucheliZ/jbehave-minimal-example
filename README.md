@@ -10,3 +10,7 @@ Minimal example for jBehave to test setup within Concourse with Allure test outp
 5. Download fly executable
 6. Do `install ~/Downloads/fly /usr/local/bin`
 7. Run `./setup-pipeline.sh` (username: `concourse`, password: `changeme`)
+
+## Run jBehave tests locally
+
+Do `mvn clean integrat-test`

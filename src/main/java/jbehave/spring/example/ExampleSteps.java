@@ -1,4 +1,4 @@
-package de.soniro.jbehave.minimal.example;
+package jbehave.spring.example;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
