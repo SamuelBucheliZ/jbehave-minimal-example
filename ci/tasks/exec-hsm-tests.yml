@@ -5,8 +5,11 @@ image_resource:
   type: docker-image
   source: { repository: maven }
 
+inputs:
+  - name: jbehave-minimal-example
+
 outputs:
   - name: test-results
 
 run:
-  path: ls #jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
+  path: jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
