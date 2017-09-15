@@ -18,5 +18,5 @@ jobs:
 #  - get: nightly
 #    trigger: true
   - task: exec-hsm-tests
-    file: jbehave-minimal-example/citasks/exec-hsm-tests.yml
+    file: jbehave-minimal-example/ci/tasks/exec-hsm-tests.yml
 
