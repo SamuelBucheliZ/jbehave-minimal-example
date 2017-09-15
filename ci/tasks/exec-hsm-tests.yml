@@ -9,4 +9,4 @@ outputs:
   - name: test-results
 
 run:
-  path: jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
+  path: ls #jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
