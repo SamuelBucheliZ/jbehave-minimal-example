@@ -12,7 +12,7 @@ outputs:
   - name: test-results
 
 params:
-  PROJECT_NAME: {{project_name}}
+  project_name: jbehave-minimal-example
 
 run:
   path: ((project_name))/ci/scripts/exec-hsm-tests.sh

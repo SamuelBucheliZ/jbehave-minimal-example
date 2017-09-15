@@ -19,4 +19,6 @@ jobs:
 #    trigger: true
   - task: exec-hsm-tests
     file: ((project_name))/ci/tasks/exec-hsm-tests.yml
+    params:
+      project_name: {{project_name}}
 
