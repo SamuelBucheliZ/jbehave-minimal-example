@@ -1,0 +1,12 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: { repository: maven }
+
+outputs:
+  - name: test-results
+
+run:
+  path: jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
