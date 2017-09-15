@@ -2,7 +2,8 @@
 #
 # All UPERCASE variables are provided externally from this script
 
-set -ex
+# TODO: Do we want set -ex, i.e., abort on first error?
+set -x
 
 cd jbehave-minimal-example
   echo "Start building with Maven"
