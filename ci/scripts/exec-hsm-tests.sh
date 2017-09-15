@@ -2,7 +2,7 @@
 
 set -x
 
-pushd jbehave-minimal-example
+pushd "${PROJECT_NAME}"
 
 echo "Starting tests with maven"
 mvn clean integration-test
@@ -12,6 +12,6 @@ echo "Tests done"
 popd
 
 echo "Copying Allure results"
-cp jbehave-minimal-example/target/allure-results/* test-results/
+cp ${PROJECT_NAME}/target/allure-results/* test-results/
 
 exit $test_status

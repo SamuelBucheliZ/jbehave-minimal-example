@@ -6,10 +6,13 @@ image_resource:
   source: { repository: maven }
 
 inputs:
-  - name: jbehave-minimal-example
+  - name: {{project_name}}
 
 outputs:
   - name: test-results
 
+params:
+  PROJECT_NAME: {{project_name}}
+
 run:
-  path: jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh
+  path: {{project_name}}/ci/scripts/exec-hsm-tests.sh

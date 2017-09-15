@@ -1,8 +1,8 @@
 resources:
-- name: jbehave-minimal-example
+- name: {{project_name}}
   type: git
   source:
-    uri: https://github.com/SamuelBucheliZ/jbehave-minimal-example.git
+    uri: https://github.com/SamuelBucheliZ/{{project_name}}.git
 #- name: nightly
 #  type: time
 #  source:
@@ -14,9 +14,9 @@ resources:
 jobs:
 - name: run-hsm-tests
   plan:
-  - get: jbehave-minimal-example
+  - get: {{project_name}}
 #  - get: nightly
 #    trigger: true
   - task: exec-hsm-tests
-    file: jbehave-minimal-example/ci/tasks/exec-hsm-tests.yml
+    file: {{project_name}}/ci/tasks/exec-hsm-tests.yml
 
