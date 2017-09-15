@@ -13,4 +13,4 @@ Minimal example for jBehave to test setup within Concourse with Allure test outp
 
 ## Run jBehave tests locally
 
-Do `mvn clean integrat-test`
+Do `mvn clean integration-test`
