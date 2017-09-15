@@ -3,20 +3,20 @@ resources:
   type: git
   source:
     uri: https://github.com/SamuelBucheliZ/jbehave-minimal-example.git
-- name: nightly
-  type: time
-  source:
-    location: Europe/Zurich
-    interval: 1h
-    start: 01:00
-    stop: 02:00
+#- name: nightly
+#  type: time
+#  source:
+#    location: Europe/Zurich
+#    interval: 1h
+#    start: 01:00
+#    stop: 02:00
 
 jobs:
 - name: run-hsm-tests
   plan:
   - get: jbehave-minimal-example
-  - get: nightly
-    trigger: true
+#  - get: nightly
+#    trigger: true
   - task: exec-hsm-tests
-    file: tasks/exec-hsm-tests.yml
+    file: jbehave-minimal-example/citasks/exec-hsm-tests.yml
 
