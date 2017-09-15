@@ -3,6 +3,8 @@ Minimal example for jBehave to test setup within Concourse with Allure test outp
 
 ## Setup
 
+Note: You need to have docker and docker-compose installed for this to work.
+
 1. Do `cd ci-test`
 2. Run `./setup_keys.sh`
 3. Run `./start-concourse.sh`

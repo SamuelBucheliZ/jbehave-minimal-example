@@ -2,13 +2,16 @@
 
 set -x
 
-cd jbehave-minimal-example
-  echo "Start building with Maven"
-  mvn clean verify
+pushd jbehave-minimal-example
 
-cd ..
-
+echo "Starting tests with maven"
+mvn clean integration-test
+test_status = $?
 echo "Tests done"
+
+popd
 
 echo "Copying Allure results"
 cp jbehave-minimal-example/target/allure-results/* test-results/
+
+exit $test_status
