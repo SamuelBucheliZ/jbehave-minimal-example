@@ -10,7 +10,7 @@ cd jbehave-minimal-example
 
 cd ..
 
-echo "Test" > test-results/
+echo "Test" > test-results/result.txt
 
 # TODO: Get Allure in here
 #cp jbehave-minimal-example/target/allure-results/* test-results/
