@@ -2,7 +2,7 @@ resources:
 - name: jbehave-minimal-example
   type: git
   source:
-    uri: https://github.com/soniro/jbehave-minimal-example.git
+    uri: https://github.com/SamuelBucheliZ/jbehave-minimal-example.git
 - name: nightly
   type: time
   source:
