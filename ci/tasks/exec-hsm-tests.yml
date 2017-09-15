@@ -6,7 +6,7 @@ image_resource:
   source: { repository: maven }
 
 inputs:
-  - name: {{project_name}}
+  - name: jbehave-minimal-example
 
 outputs:
   - name: test-results
@@ -15,4 +15,4 @@ params:
   project_name: jbehave-minimal-example
 
 run:
-  path: ((project_name))/ci/scripts/exec-hsm-tests.sh
+  path: jbehave-minimal-example/ci/scripts/exec-hsm-tests.sh # it seems ((project_name))/ci/scripts/exec-hsm-tests.sh does not work currently
